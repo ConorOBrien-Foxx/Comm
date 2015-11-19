@@ -6,6 +6,9 @@ Comm is a stack-based programming language whose commands are defined by the peo
 
 The interpreter is currently a work-in-progress.
 
+## Input and Output methods
+Input is "fed" to the program before execution, as all input is laid on the stack initially. After termination, the top item on the stack, if any, is outputted.
+
 ## What commands are there?
 Look no further:
 

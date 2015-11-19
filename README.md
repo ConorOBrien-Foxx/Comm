@@ -61,7 +61,7 @@ Look no further:
     Y         | unassigned  | --
     Z         | unassigned  | --
     [         | unassigned  | --
-    \         | unassigned  | --
+    \         | self        | Escapes next character, if in string; otherwise, skip the next character
     ]         | unassigned  | --
     ^         | unassigned  | --
     _         | unassigned  | --

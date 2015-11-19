@@ -50,7 +50,7 @@ Look no further:
     N         | unassigned  | --
     O         | unassigned  | --
     P         | unassigned  | --
-    Q         | unassigned  | --
+    Q         | Mego [1]    | Terminates program
     R         | unassigned  | --
     S         | unassigned  | --
     T         | unassigned  | --
@@ -95,3 +95,6 @@ Look no further:
     {         | unassigned  | --
     |         | unassigned  | --
     }         | unassigned  | --
+    ----
+    Contributors:
+    [1]: Mego, https://github.com/Mego

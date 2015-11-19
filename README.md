@@ -12,7 +12,7 @@ Input is "fed" to the program before execution, as all input is laid on the stac
 ## What commands are there?
 As of 13:29 11/19/15, Comm supports a multi-paradigm operating. Thus, each paradigm has it's own set of characters.
 
-### Stakc-based commands
+### Stack-based commands
 
     CHARACTER | CONTRIBUTOR | FUNCTION
     <space>   | self        | NO-OP

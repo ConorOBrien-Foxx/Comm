@@ -10,7 +10,9 @@ The interpreter is currently a work-in-progress.
 Input is "fed" to the program before execution, as all input is laid on the stack initially. After termination, the top item on the stack, if any, is outputted.
 
 ## What commands are there?
-Look no further:
+As of 13:29 11/19/15, Comm supports a multi-paradigm operating. Thus, each paradigm has it's own set of characters.
+
+### Stakc-based commands
 
     CHARACTER | CONTRIBUTOR | FUNCTION
     <space>   | self        | NO-OP
@@ -74,7 +76,7 @@ Look no further:
     c         | unassigned  | --
     d         | unassigned  | --
     e         | unassigned  | --
-    f         | unassigned  | --
+    f         | feresum [2] | Changes the paradigm to functional
     g         | unassigned  | --
     h         | unassigned  | --
     i         | unassigned  | --
@@ -101,3 +103,96 @@ Look no further:
     ----
     Contributors:
     [1]: Mego, https://github.com/Mego
+    [2]: feresum, https://github.com/feresum
+
+### Functional commands
+
+    CHARACTER | unassigned  | --
+    <space>   | unassigned  | --
+    !         | unassigned  | --
+    "         | unassigned  | --
+    #         | unassigned  | --
+    $         | unassigned  | --
+    %         | unassigned  | --
+    &         | unassigned  | --
+    '         | unassigned  | --
+    (         | unassigned  | --
+    )         | unassigned  | --
+    *         | unassigned  | --
+    +         | unassigned  | --
+    ,         | unassigned  | --
+    -         | unassigned  | --
+    .         | unassigned  | --
+    /         | unassigned  | --
+    0-9       | unassigned  | --
+    :         | unassigned  | --
+    ;         | unassigned  | --
+    <         | unassigned  | --
+    =         | unassigned  | --
+    >         | unassigned  | --
+    ?         | unassigned  | --
+    @         | unassigned  | --
+    A         | unassigned  | --
+    B         | unassigned  | --
+    C         | unassigned  | --
+    D         | unassigned  | --
+    E         | unassigned  | --
+    F         | unassigned  | --
+    G         | unassigned  | --
+    H         | unassigned  | --
+    I         | unassigned  | --
+    J         | unassigned  | --
+    K         | unassigned  | --
+    L         | unassigned  | --
+    M         | unassigned  | --
+    N         | unassigned  | --
+    O         | unassigned  | --
+    P         | unassigned  | --
+    Q         | unassigned  | --
+    R         | unassigned  | --
+    S         | unassigned  | --
+    T         | unassigned  | --
+    U         | unassigned  | --
+    V         | unassigned  | --
+    W         | unassigned  | --
+    X         | unassigned  | --
+    Y         | unassigned  | --
+    Z         | unassigned  | --
+    [         | unassigned  | --
+    \         | unassigned  | --
+    ]         | unassigned  | --
+    ^         | unassigned  | --
+    _         | unassigned  | --
+    `         | unassigned  | --
+    a         | unassigned  | --
+    b         | unassigned  | --
+    c         | unassigned  | --
+    d         | unassigned  | --
+    e         | unassigned  | --
+    f         | unassigned  | --
+    g         | unassigned  | --
+    h         | unassigned  | --
+    i         | unassigned  | --
+    j         | unassigned  | --
+    k         | unassigned  | --
+    l         | unassigned  | --
+    m         | unassigned  | --
+    n         | unassigned  | --
+    o         | unassigned  | --
+    p         | unassigned  | --
+    q         | unassigned  | --
+    r         | unassigned  | --
+    s         | self        | Switches the paradigm to stack-based
+    t         | unassigned  | --
+    u         | unassigned  | --
+    v         | unassigned  | --
+    w         | unassigned  | --
+    x         | unassigned  | --
+    y         | unassigned  | --
+    z         | unassigned  | --
+    {         | unassigned  | --
+    |         | unassigned  | --
+    }         | unassigned  | --
+    ----
+    Contributors:
+    [1]: feresum, https://github.com/feresum

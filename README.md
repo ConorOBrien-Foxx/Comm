@@ -2,7 +2,7 @@
 _A language in which functions are implemented by you, the user._
 
 ## What is Comm?
-Comm is a stack-based programming language whose commands are defined be the people (you!). I start it off with basic commands; from there, you can open up an issue in this repository suggesting a command and its functionality, along with which character you request your function to be assigned to. This character does not have to be on the list, but I will start off with the printable ASCII (from ` ` (a space) to `~`) then proceed to two-or-more-byte characters. 
+Comm is a stack-based programming language whose commands are defined by the people (you!). I start it off with basic commands; from there, you can open up an issue in this repository suggesting a command and its functionality, along with which character you request your function to be assigned to. This character does not have to be on the list, but I will start off with the printable ASCII (from ` ` (a space) to `~`) then proceed to two-or-more-byte characters. 
 
 The interpreter is currently a work-in-progress.
 

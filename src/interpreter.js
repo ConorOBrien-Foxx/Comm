@@ -9,7 +9,7 @@ function Comm(code){
   this.commands            = {};
   this.commands.stack      = {
     " ": function(C){return;},
-    "!": function(C){C.stack.push(C.code[c.index++]);return;},
+    "!": function(C){C.stack.push(C.code[++C.index]);return;},
     "\"": function(C){C.mode=1;return;},
     "#": function(C){var toggle=C.stack.pop();C.stack.push(C.stack.pop(),toggle);return;},
     "%": function(C){var toggle=C.stack.pop();C.stack.push(C.stack.pop()%toggle);return;},
@@ -72,4 +72,6 @@ Comm.prototype.read = function(input){
 Comm.prototype.step = function(){
   var curChar = this.code[this.index];
   var curFunc = this.commands[this.paradigm][curChar];
+  if(curFunc) curFunc(this);
+  this.index++;
 }

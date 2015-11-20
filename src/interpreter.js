@@ -1,3 +1,14 @@
+// Pollyfilling!
+Math.trunc=Math.trunc||function(x){return x<0?Math.ceil(x):Math.floor(x);}
+Number.isNaN=Number.isNaN||function(v){return typeof v==="number"&&isNaN(v);}
+// useful funcs
+function defined(val){
+  return typeof val!=="undefined"&&!Number.isNaN(val);
+}
+function pushTruthy(a,v){
+  return a.concat(v.filter(defined));
+}
+
 function Comm(code){
   this.code                = code;
   this.index               = 0;
@@ -23,7 +34,7 @@ function Comm(code){
     "%": function(C){
       var B=C.stack.pop();
       var A=C.stack.pop();
-      C.stack.push(A%B);
+      if(A&&B)C.stack.push(A%B);
       return;
     },
     "(": function(C){return;},
@@ -64,6 +75,11 @@ function Comm(code){
       C.stack.push(A+B);
       return;
     },
+    ",": function(C){
+      var N=C.stack.pop();
+      
+      return;
+    },
     "-": function(C){
       var A=C.stack.pop();
       var B=C.stack.pop();
@@ -86,6 +102,12 @@ function Comm(code){
     "7": function(C){C.stack.push(7);return;},
     "8": function(C){C.stack.push(8);return;},
     "9": function(C){C.stack.push(9);return;},
+    "=": function(C){
+      var A=C.stack.pop();
+      var B=C.stack.pop();
+      C.stack.push(A==B);
+      return;
+    }
     "A": function(C){C.stack.push(10);return;},
     "B": function(C){C.stack.push(11);return;},
     "C": function(C){C.stack.push(12);return;},

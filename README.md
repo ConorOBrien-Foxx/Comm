@@ -27,7 +27,7 @@ As of 13:29 11/19/15, Comm supports a multi-paradigm operating. Thus, each parad
     )         | self        | Jumps to matching ( if the top of the stack is nonzero; otherwise proceeds
     *         | self        | Pops B then A and pushes AB (that is, A*B)
     +         | self        | Pops B then A and pushes A+B
-    ,         | unassigned  | --
+    ,         | self        | Pops N and pushes N truncated
     -         | self        | Pops B then A and pushes A-B
     .         | unassigned  | --
     /         | self        | Pops B then A and pushes A/B
@@ -35,7 +35,7 @@ As of 13:29 11/19/15, Comm supports a multi-paradigm operating. Thus, each parad
     :         | unassigned  | --
     ;         | unassigned  | --
     <         | unassigned  | --
-    =         | self        | Pops B then A and pushes the equality of A and B
+    =         | self        | Pops B then A and pushes the equality of A and B (loose; so 1 == "1")
     >         | unassigned  | --
     ?         | unassigned  | --
     @         | unassigned  | --
@@ -50,13 +50,13 @@ As of 13:29 11/19/15, Comm supports a multi-paradigm operating. Thus, each parad
     I         | unassigned  | --
     J         | unassigned  | --
     K         | unassigned  | --
-    L         | unassigned  | --
+    L         | self        | Pops B then A and pushes A // B (floor division)
     M         | unassigned  | --
     N         | unassigned  | --
     O         | unassigned  | --
     P         | unassigned  | --
     Q         | Mego [1]    | Terminates program
-    R         | unassigned  | --
+    R         | self        | Reverses stack
     S         | unassigned  | --
     T         | unassigned  | --
     U         | unassigned  | --
@@ -68,14 +68,14 @@ As of 13:29 11/19/15, Comm supports a multi-paradigm operating. Thus, each parad
     [         | unassigned  | --
     \         | self        | Escapes next character, if in string; otherwise, skip the next character
     ]         | unassigned  | --
-    ^         | unassigned  | --
+    ^         | self        | Pops B then A and pushes A^B (exponentiation)
     _         | unassigned  | --
     `         | unassigned  | --
     a         | unassigned  | --
     b         | unassigned  | --
     c         | unassigned  | --
     d         | unassigned  | --
-    e         | unassigned  | --
+    e         | self        | Pops B then A and pushes the equality of A and B (strict; so 1 !== "1")
     f         | feresum [2] | Changes the paradigm to functional
     g         | unassigned  | --
     h         | unassigned  | --
